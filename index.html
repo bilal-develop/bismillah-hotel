@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostily Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <!-- Changed href -->
+            <span class="logo-icon"></span> <!-- HOSTILY text removed, assuming logo contains it -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav main-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home +
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                        <li><a class="dropdown-item" href="#">Home Style 1</a></li>
+                        <li><a class="dropdown-item" href="#">Home Style 2</a></li>
+                        <li><hr class="dropdown-divider" style="border-color: #444;"></li>
+                        <li><a class="dropdown-item" href="#">Another Action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages +
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Services</a></li>
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="roomDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Room +
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="roomDropdown">
+                        <li><a class="dropdown-item" href="#">Single Room</a></li>
+                        <li><a class="dropdown-item" href="#">Double Room</a></li>
+                        <li><a class="dropdown-item" href="#">Suite</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog +
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-book-now ms-lg-3">
+                BOOK NOW →
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Booking Form -->
+<section class="hero-section hero-section-booking">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content-container">
+        <div class="hero-text text-center">
+            <h1>The Best Hotel</h1>
+            <h2>Deals in the World</h2>
+        </div>
+    </div>
+    <div class="booking-form-wrapper">
+        <div class="container">
+            <form class="row g-3 align-items-end booking-form-inner">
+                <div class="col-lg col-md-6 col-12">
+                    <label for="checkIn" class="form-label">Check In</label>
+                    <div class="position-relative">
+                        <input type="text" class="form-control" id="checkIn" placeholder="mm/dd/yyyy">
+                        <span class="input-icon"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 col-12">
+                    <label for="checkOut" class="form-label">Check Out</label>
+                    <div class="position-relative">
+                        <input type="text" class="form-control" id="checkOut" placeholder="mm/dd/yyyy">
+                        <span class="input-icon"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 col-12">
+                    <label for="room" class="form-label">Room</label>
+                    <select class="form-select" id="room">
+                        <option selected>1 Room</option>
+                        <option>2 Rooms</option>
+                        <option>3 Rooms</option>
+                        <option>4+ Rooms</option>
+                    </select>
+                </div>
+                <div class="col-lg-auto col-md-6 col-12">
+                    <button type="submit" class="btn btn-check-now w-100">CHECK NOW</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+ <!-- Welcome Section -->
+ <section class="welcome-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 welcome-text-content mb-4 mb-lg-0">
+                <h6 class="sub-heading">Accommodations</h6>
+                <h2 class="main-heading display-5">Welcome Our Hotels <br> And Resorts</h2>
+                <p class="description my-4">
+                    Savvy travelers are looking for more than just the next destination
+                    on the map. They are looking for a memorable experience and to
+                    make new friends along the way.
+                </p>
+                <a href="#" class="btn btn-read-more">READ MORE →</a>
+            </div>
+            <div class="col-lg-6 welcome-image-content text-center text-lg-end">
+                <img src="image.webp" class="img-fluid" alt="Comfortable hotel room">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Luxury Rooms Section -->
+  <section class="luxury-rooms-section py-5">
+    <div class="container">
+        <div class="row mb-4 mb-md-5 align-items-center">
+            <div class="col-md-6">
+                <h6 class="rooms-sub-heading">Deluxe And Luxury</h6>
+                <h2 class="rooms-main-heading">Our Luxury Rooms</h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav nav-pills room-filters justify-content-md-end mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">All Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Luxury</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Single</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Small Suite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Family</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-2.jpg" alt="Luxury Suite Room">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$220 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Luxury Suite</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-5.jpg" alt="Deluxe Room">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$180 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Deluxe Room</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-2.jpg" alt="Another Luxury Suite">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$250 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Premium Suite</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-4.jpg" alt="Single Room">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$169 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Single Room</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-5.jpg" alt="Family Room">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$280 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Family Room</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="room-card">
+                     <div class="room-image-wrapper">
+                        <img src="luxury-4.jpg" alt="Small Suite">
+                    </div>
+                    <div class="room-card-content">
+                        <p class="room-price">$190 <span class="per-night">/ Night</span></p>
+                        <h5 class="room-name">Small Suite</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero Section with Video Play Button -->
+<section class="hero-section hero-section-video">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="hero-text">
+                    <h1>Book hotel rooms, get deals &<br>book flights online.</h1>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 d-flex justify-content-center justify-content-lg-end align-items-center mt-4 mt-lg-0">
+                <button class="hero-play-button" aria-label="Play video">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scroll to Top Button HTML -->
+<a href="#" id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+
+<!-- Features Section -->
+<section class="services-section">
+    <div class="services-container">
+        <!-- Item 1: Room Cleaning -->
+        <div class="service-item">
+            <div class="icon-wrapper">
+                <!-- Replace with your actual SVG icon for Room Cleaning -->
+              <img src="image (2).webp" alt="">
+            </div>
+            <div class="service-content">
+                <h3>Room Cleaning</h3>
+                <p>Proin massa augue, lacinia at blandit ac, fringilla scelerisque tortor</p>
+            </div>
+        </div>
+
+        <!-- Item 2: Room Wifi -->
+        <div class="service-item">
+            <div class="icon-wrapper">
+                <!-- Replace with your actual SVG icon for Room Wifi -->
+                <img src="image (11).webp" alt="">
+            </div>
+            <div class="service-content">
+                <h3>Room Wifi</h3>
+                <p>Proin massa augue, lacinia at blandit ac, fringilla scelerisque tortor</p>
+            </div>
+        </div>
+
+        <!-- Item 3: Pickup & Drop -->
+        <div class="service-item">
+            <div class="icon-wrapper">
+                <!-- Replace with your actual SVG icon for Pickup & Drop -->
+               <img src="image (10).webp" alt="">
+            </div>
+            <div class="service-content">
+                <h3>Pickup & Drop</h3>
+                <p>Proin massa augue, lacinia at blandit ac, fringilla scelerisque tortor</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Features Section -->
+<section class="about-restaurant-section">
+    <div class="about-restaurant-container">
+        <div class="about-restaurant-image-col">
+            <!-- Yahan apni image ka path daalein -->
+            <img src="image (6).webp">
+        </div>
+        <div class="about-restaurant-content-col">
+            <span class="sub-heading">Our Food</span>
+            <h1>Restaurant Silo</h1>
+            <p>
+                Proin massa augue, lacinia at blandit ac, fringilla scelerisque
+                tortor. Mauris sit amet lectus porta,
+            </p>
+            <a href="#" class="cta-button">
+                READ MORE <span class="arrow-icon">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+ 
+
+<section class="library-section">
+    <div class="library-container">
+        <div class="library-content-col">
+            <span class="sub-heading">Read Our Books</span>
+            <h1>The Library</h1>
+            <p>
+                Proin massa augue, lacinia at blandit ac, fringilla scelerisque
+                tortor. Mauris sit amet lectus porta,
+            </p>
+            <a href="#" class="cta-button">
+                READ MORE <span class="arrow-icon">→</span>
+            </a>
+        </div>
+        <div class="library-image-col">
+            <!-- Yahan apni image ka path daalein -->
+            <img src="image (7).webp">
+        </div>
+    </div>
+</section>
+
+<section class="about-restaurant-section">
+    <div class="about-restaurant-container">
+        <div class="about-restaurant-image-col">
+            <!-- Yahan apni image ka path daalein -->
+            <img src="image (8).webp">
+        </div>
+        <div class="about-restaurant-content-col">
+            <span class="sub-heading">Fitness Equipment</span>
+            <h1>Exercise equipment</h1>
+            <p>
+                Proin massa augue, lacinia at blandit ac, fringilla scelerisque
+                tortor. Mauris sit amet lectus porta,
+            </p>
+            <a href="#" class="cta-button">
+                READ MORE <span class="arrow-icon">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="library-section">
+    <div class="library-container">
+        <div class="library-content-col">
+            <span class="sub-heading">Experiences</span>
+            <h1>Swimming Pool</h1>
+            <p>
+                Proin massa augue, lacinia at blandit ac, fringilla scelerisque
+                tortor. Mauris sit amet lectus porta,
+            </p>
+            <a href="#" class="cta-button">
+                READ MORE <span class="arrow-icon">→</span>
+            </a>
+        </div>
+        <div class="library-image-col">
+            <!-- Yahan apni image ka path daalein -->
+            <img src="image (9).webp">
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-slider-section">
+    <div class="testimonial-slider-container">
+        <div class="slides-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="testimonial-image-col">
+                    <!-- Yahan apni image ka path daalein -->
+                    <img src="testimonial-1.jpg">
+                </div>
+                <div class="testimonial-content-col">
+                    <h3>David Beckham</h3>
+                    <span class="designation">UX Designer</span>
+                    <p>Proin massa augue, lacinia at blandit ac, fringilla scelerisque tortor. Mauris sit amet lectus porta, porta lectus non, malesuada neque. Integer in tempus leo. Quisque vitae leo ac ex suscipit iaculis eu in nisl.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="testimonial-image-col">
+                    <img src="testimonial-2.jpg">
+                </div>
+                <div class="testimonial-content-col">
+                    <h3>Jane Doe</h3>
+                    <span class="designation">Product Manager</span>
+                    <p>Donec vestibulum volutpat lectus, vel aliquet massa porttitor in. Integer eleifend erat et elit consequat, vitae volutpat nulla laoreet. Sed auctor, magna id consequat blandit, erat elit dictum.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="testimonial-image-col">
+                    <img src="testimonial-3.jpg">
+                </div>
+                <div class="testimonial-content-col">
+                    <h3>John Smith</h3>
+                    <span class="designation">Lead Developer</span>
+                    <p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-dots">
+        <!-- Dots will be generated by JavaScript -->
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="blog-header">
+        <span class="sub-heading">Our Blog</span>
+        <h2>Read Our Blog and News</h2>
+    </div>
+
+    <div class="blog-posts-container">
+        <!-- Blog Post 1 -->
+        <a href="#" class="blog-post-card"> <!-- Card ko link bana sakte hain -->
+            <div class="blog-post-image">
+                <!-- Yahan apni image ka path daalein -->
+        <img src="image (3).webp">
+            </div>
+            <div class="blog-post-content-wrapper">
+                <div class="blog-post-date">
+                    <span class="day">21</span>
+                    <span class="month-year">Jul 2023</span>
+                </div>
+                <div class="blog-post-title">
+                    <h3>Find cheap hotels in the best locations</h3>
+                </div>
+            </div>
+        </a>
+
+        <!-- Blog Post 2 -->
+        <a href="#" class="blog-post-card">
+            <div class="blog-post-image">
+        <img src="blog-2.webp">
+            </div>
+            <div class="blog-post-content-wrapper">
+                <div class="blog-post-date">
+                    <span class="day">25</span>
+                    <span class="month-year">Aug 2023</span>
+                </div>
+                <div class="blog-post-title">
+                    <h3>Book a room Today most Affordable Rates.</h3>
+                </div>
+            </div>
+        </a>
+
+        <!-- Blog Post 3 -->
+        <a href="#" class="blog-post-card">
+            <div class="blog-post-image">
+                <img src="image (5).webp">
+            </div>
+            <div class="blog-post-content-wrapper">
+                <div class="blog-post-date">
+                    <span class="day">29</span>
+                    <span class="month-year">Sep 2023</span>
+                </div>
+                <div class="blog-post-title">
+                    <h3>Our expertise covers all Aspects of the industry</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+  <!-- ... Aapki website ka baaki content yahan hoga ... -->
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-col footer-col-about">
+            <div class="footer-logo">
+               <img style="width: 134px; height: 45px;" src="logo.png" alt="">
+            </div>
+            <p class="footer-about-text">
+                Phasellus nisi sapien, rutrum placerat sapien eu, rhoncus tempus
+            </p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Replace F with actual icon -->
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <!-- Replace T with actual icon -->
+                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a> <!-- Replace Bē with actual icon -->
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <!-- Replace in with actual icon -->
+            </div>
+        </div>
+
+        <!-- Column 2: Information -->
+        <div class="footer-col">
+            <h4 class="footer-col-title">Information</h4>
+            <ul class="footer-info-list">
+                <li>
+                    <!-- Replace with actual location icon -->
+                    <span  ><i class="fa-solid fa-location-dot me-2"></i></span>
+                    <span>GXF4+8HQ Chippenham<br>United Kingdom</span>
+                </li>
+                <li>
+                    <!-- Replace with actual email icon -->
+                    <span class="info-icon ">✉️</span>
+                    <a href="mailto:info.help@gmail.com ">info.help@gmail.com</a>
+                </li>
+                <li>
+                    <!-- Replace with actual phone icon -->
+                    <span><i class="fa-solid fa-phone me-2"></i></span>
+                    <a href="tel:+125895658568">+125 (895) 658 568</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Pages Links -->
+        <div class="footer-col">
+            <h4 class="footer-col-title">Pages Links</h4>
+            <ul class="footer-links-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Room List</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Subscribe -->
+        <div class="footer-col footer-col-subscribe">
+            <h4 class="footer-col-title">Subscribe</h4>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" aria-label="Subscribe">
+                    <!-- Replace with actual hand pointer/send icon -->
+                    <span>👆</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+ <!-- ... Pichla footer section yahan hoga ... -->
+
+ <div class="copyright-bar">
+    <div class="copyright-bar-container">
+        <div class="copyright-text">
+            Copyright © 2023 <a href="#" class="golden-link">ThemeOri</a> Website by <a href="#" class="golden-link">Hostily</a>
+        </div>
+        <div class="footer-bottom-nav">
+            <a href="#">FAQ</a>
+            <span class="nav-separator">|</span>
+            <a href="#">Terms of Use</a>
+            <span class="nav-separator">|</span>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
